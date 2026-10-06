@@ -8,40 +8,41 @@
     <script src="calc.js" defer></script>
 </head>
 <body id="top">
-    <header>
-        <a href="https://destinnnyyy.github.io/"><img src="logo.png" alt="Логотип сайта" width="60" height="60"></a>
-        <nav>
-            <a href="#calc">Калькулятор</a>
-            <a href="https://destinnnyyy.github.io/web4/">Задание 4</a>
+    <header class="site-header">
+        <a href="https://destinnnyyy.github.io/">
+            <img class="logo" src="logo.png" alt="Логотип сайта">
+        </a>
+        <h1>Web-Swag</h1>
+        <nav class="site-nav">
+            <span class="nav-title">Калькулятор Web-Swag</span>
         </nav>
     </header>
 
-    <main>
-        <h1>Web-Swag</h1>
-
-        <h2 id="calc">Калькулятор стоимости заказа</h2>
-        <form id="calc-form">
-            <p>
-                <label for="product">Товар:</label>
-                <select id="product" name="product">
-                    <option value="100">Блокнот — 100 руб.</option>
-                    <option value="250">Рюкзак — 250 руб.</option>
-                    <option value="1200">Наушники — 1200 руб.</option>
-                </select>
-            </p>
-            <p>
-                <label for="quantity">Количество:</label>
-                <input id="quantity" name="quantity" type="text" autocomplete="off">
-            </p>
-            <p>
-                <button id="calc-button" type="submit">Рассчитать</button>
-            </p>
-        </form>
-        <p id="result"></p>
+    <main class="container">
+        <section>
+            <h2 id="calc">Калькулятор стоимости заказа</h2>
+            <form id="calc-form">
+                <p>
+                    <label for="product">Товар:</label>
+                    <select id="product" name="product">
+                        <option value="100">Блокнот — 100 руб.</option>
+                        <option value="250">Рюкзак — 250 руб.</option>
+                        <option value="1200">Наушники — 1200 руб.</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="quantity">Количество:</label>
+                    <input id="quantity" name="quantity" type="text" autocomplete="off">
+                </p>
+                <p>
+                    <button id="calc-button" type="submit">Рассчитать</button>
+                </p>
+            </form>
+            <p id="result"></p>
+        </section>
     </main>
 
-    <footer>
-        <a href="#top">↑ Наверх</a>
+    <footer class="site-footer">
         <p>© 2026 Мой сайт</p>
     </footer>
 </body>
