@@ -1,41 +1,163 @@
+/* =========================
+   ОСНОВНЫЕ НАСТРОЙКИ
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 0 16px;
-    line-height: 1.5;
-}
-
-header {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 12px 0;
-    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    min-height: 100vh;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+
+    background: #0f172a;
+    color: #f8fafc;
 }
 
-nav a {
-    margin-right: 16px;
+
+/* =========================
+   ШАПКА
+   ========================= */
+
+.site-header {
+    width: 100%;
+    padding: 10px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #0b1f4d,
+        #24104f
+    );
 }
+
+.site-header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+
+/* =========================
+   НАВИГАЦИЯ
+   ========================= */
+
+.site-nav {
+    width: 100%;
+}
+
+.nav-title {
+    display: block;
+    padding: 10px 0;
+
+    color: white;
+}
+
+
+/* =========================
+   ЛОГОТИП
+   ========================= */
+
+.logo {
+    display: block;
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   ОСНОВНОЙ КОНТЕНТ
+   ========================= */
+
+main.container {
+    flex: 1;
+    padding: 20px;
+
+    background: white;
+    color: #000;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #2563eb;
+}
+
+
+/* =========================
+   ССЫЛКИ
+   ========================= */
+
+a {
+    color: #0645ad;
+}
+
+a:hover {
+    color: #d00;
+}
+
+
+/* =========================
+   ФОРМА КАЛЬКУЛЯТОРА
+   ========================= */
 
 label {
     display: inline-block;
-    min-width: 100px;
+    min-width: 110px;
 }
 
-input,
-select,
-button {
-    font-size: 1em;
-    padding: 4px 8px;
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
 }
 
 #result {
     font-weight: bold;
 }
 
-footer {
-    margin-top: 32px;
-    padding: 12px 0;
-    border-top: 1px solid #ccc;
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+    width: 100%;
+    padding: 10px 20px;
+
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   ПЛАНШЕТ / ПК
+   ========================= */
+
+@media (min-width: 768px) {
+
+    .site-header h1 {
+        font-size: 32px;
+    }
+
 }
