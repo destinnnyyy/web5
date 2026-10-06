@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-right: 16px;
+}
+
+label {
+    display: inline-block;
+    min-width: 100px;
+}
+
+input,
+select,
+button {
+    font-size: 1em;
+    padding: 4px 8px;
+}
+
+#result {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 32px;
+    padding: 12px 0;
+    border-top: 1px solid #ccc;
+}
